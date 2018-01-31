@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
   <persistence-unit name="RondaPU" transaction-type="JTA">
-    <!--<provider>org.hibernate.ejb.HibernatePersistence</provider>-->
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
-    <class>employees.Employee</class>
+    
     <properties>
         <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
         <property name="javax.persistence.jdbc.url" value="jdbc:postgreesql://ec2-54-235-240-126.compute-1.amazonaws.com:5432/dbger22n5sbfcp"/>
@@ -11,7 +11,7 @@
         <property name="javax.persistence.jdbc.password" value="c90892a81117f65e6c3e27a7ec748ea7654ca4588152c8ec87a4bd68010b27d3" />
     </properties>
     <!--<jta-data-source>java:jboss/CrudDS</jta-data-source>-->
-    
+    <class>employees.Employee</class>
     <class>locais.Local</class>
     
     <!--<exclude-unlisted-classes>false</exclude-unlisted-classes>-->
