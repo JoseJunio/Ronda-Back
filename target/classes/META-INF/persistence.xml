@@ -11,7 +11,8 @@
     </properties>
     <!--<jta-data-source>java:jboss/CrudDS</jta-data-source>-->
     <class>locais.Local</class>
-    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <!--<exclude-unlisted-classes>false</exclude-unlisted-classes>-->
     <!--<properties/>-->
   </persistence-unit>
 </persistence>
