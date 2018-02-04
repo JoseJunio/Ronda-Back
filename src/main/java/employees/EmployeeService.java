@@ -63,6 +63,8 @@ public class EmployeeService {
         emp.setUsuario(employee.getUsuario());
         emp.setSenha(employee.getSenha());
         emp.setAtivo(employee.getAtivo());
+        emp.setLatitude(employee.getLatitude());
+        emp.setLongitude(employee.getLongitude());
         entity.merge(emp);
         return emp;
     }
