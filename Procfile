@@ -1,1 +1,0 @@
-web: php /src/main/webapp/main.php
