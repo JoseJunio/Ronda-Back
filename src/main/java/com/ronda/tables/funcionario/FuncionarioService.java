@@ -8,6 +8,6 @@ import com.ronda.tables.utils.GenericService;
 
 @RestController
 @RequestMapping(path = "/api/funcionario")
-public class FuncionarioService extends GenericService<LocalEntity, Long>{
+public class FuncionarioService extends GenericService<FuncionarioEntity, Long>{
 
 }
