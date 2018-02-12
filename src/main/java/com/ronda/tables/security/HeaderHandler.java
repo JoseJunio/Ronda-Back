@@ -44,7 +44,7 @@ public class HeaderHandler implements LogoutSuccessHandler, Filter{
 //		response.setHeader("Access-Control-Allow-Origin", "https://admfarmafacil.herokuapp.com");
 //		response.setHeader("Access-Control-Allow-Origin", "http://localhost:8100");
 		response.setHeader("Access-Control-Allow-Origin", "https://ronda-back.herokuapp.com");
-		response.setHeader("Access-Control-Allow-Credentials", "true");
+		response.setHeader("Access-Control-Allow-Credentials", "false");
 		response.setHeader("Access-Control-Allow-Methods", "POST, GET, PUT, DELETE, OPTIONS");
 		response.setHeader("Access-Control-Max-Age", "3600");
 		response.setHeader("Access-Control-Allow-Headers", "accept, authorization, content-type, x-requested-with, x-xsrf-token");
