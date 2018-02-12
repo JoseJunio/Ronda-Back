@@ -48,10 +48,10 @@ public class FuncionarioEntity extends BaseEntity<Long>{
 	@Column(name = "ativo", nullable = false)
     private String ativo;
 	
-	@Column(name = "latitude", nullable = false)
+	@Column(name = "latitude")
     private String latitude;
 	
-	@Column(name = "longitude", nullable = false)
+	@Column(name = "longitude")
     private String longitude;
 	
 	public FuncionarioEntity(){
