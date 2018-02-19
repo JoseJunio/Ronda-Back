@@ -13,7 +13,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 	public void addCorsMappings(CorsRegistry registry) {
 		registry.addMapping("/api/**")
 			.allowedOrigins("https://ronda-front.herokuapp.com")
-			.allowedMethods("POST","GET", "PUT", "DELETE")
+			.allowedMethods("POST, GET, PUT, DELETE")
 			.allowCredentials(false).maxAge(3600);
 	}
 }
