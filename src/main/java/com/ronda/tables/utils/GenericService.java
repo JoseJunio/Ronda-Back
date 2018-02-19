@@ -113,8 +113,9 @@ public abstract class GenericService<T extends BaseEntity<ID>, ID extends Serial
 		return ResponseEntity.status(HttpStatus.PRECONDITION_FAILED).body(message);
 	}
 
+	@SuppressWarnings("unchecked")
 	@RequestMapping(method = RequestMethod.DELETE)
-	public ResponseEntity<?> delete(@RequestBody T entity) {
+	public ResponseEntity<?> delete(@RequestBody @Validated T entity) {
 		this.LOGGER.info(String.format("Deletando a Entidade [%s]", entity));
 		try {
 			this.genericRepository.delete(entity);
